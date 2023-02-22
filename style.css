@@ -6,11 +6,13 @@
     --yellow: #e9c46a;
     --orange: #f4a261;
     --red: #e76f51;
+   
 }
 body{margin: 0;
 padding: 0;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
+
 }
 
 #top
@@ -20,6 +22,7 @@ font-weight: bold;
     flex-direction: row;
     align-items: center;
     justify-content:space-between ;
+    color: var(--red);
 }
 #center-middle
 {
@@ -36,17 +39,26 @@ font-weight: bold;
     display: flex;
     justify-content:space-between;
     height: 80vh;
+    color: var(--dark_blue);
+    font-size: 1.6vw
     
 }
 ul
 {
     list-style:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+   
 }
 li
 {
-    padding: 10%;
+    padding: 10% ;
     display: flex;
-    align-items: center;
+  width: 110%;
+    margin-left: -40%;
+    
 }
 li:hover
 {
@@ -55,6 +67,37 @@ li:hover
 #sales-stats
 {
     height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    left: 10%;
+    
+    
+}
+#sale1
+{
+  background-color: #e76f51;
+}
+#sale2
+{
+  background-color: #74e751;
+}
+#sale3
+{
+  background-color: #7e51e7;
+}
+.sale
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left:-14%; 
+    width: 20vw;
+    height: 100%;
+    border-radius: 7px;
+    margin: 1%;
 }
 #orders-stats
 {
@@ -66,8 +109,19 @@ li:hover
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
+    width: 20%;
 
     
+}
+#left-middle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display:inline-block;
+    
+    /* min-width: 12%; */
+
 }
 
 #updates
@@ -79,4 +133,53 @@ li:hover
 #analytics
 {
     height: 50%;
+}
+a
+{
+    text-decoration: none;
+    color: var(--dark_blue);
+}
+a
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+a.active::before
+{
+    content:"";
+    width: 0.1vw;
+    height: 2vh;
+    background-color: #264653;
+    padding: 3%;
+}
+#active
+{
+    background-color: var(--yellow);
+   
+
+}
+#top-center
+{
+    display: flex;
+    flex-direction: column;
+}
+#top-text
+{
+    margin-bottom: 10%;
+}
+circle
+{
+   fill: none;
+   stroke: var(--dark_blue);
+   stroke-width: 8%;
+   stroke-linecap: round;
+   stroke-dasharray: 380;
+   stroke-dashoffset: 90; 
+   /* offset przesuwa kolko,array zmienia ksztalt */
+}
+h3,h1
+{
+    margin: 0px;
+
 }

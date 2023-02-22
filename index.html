@@ -15,9 +15,15 @@
             <div id="logo">
                 <img src="./images/logo.png" alt="logo" width="38%" height="80%">
             </div>
-            <div id="top-text">
-                Admin panel
+            <div id="top-center">
+                <div id="top-text">
+                    Admin panel
+                </div>
+                <div id="calendar">
+                    <input type="date">
+                </div>
             </div>
+           
             <div id="right-top-settings">
                 Your profile
             </div>
@@ -26,7 +32,7 @@
             <div id="left-middle">
                 <div id="panels">
                     <ul>
-                        <li><i class="material-icons">dashboard</i>Dashboard</li>
+                        <li id="active"><a class="active" href="#"><i class="material-icons">dashboard</i>Dashboard</a></li>
                         <li><i class="material-icons">group</i>Clients</li>
                         <li><i class="material-icons">sell</i>Orders</li>
                         <li><i class="material-icons">trending_up</i>Analytics</li>
@@ -41,7 +47,27 @@
             </div>
             <div id="center-middle">
                 <div id="sales-stats">
-                    sales
+                    <div id="sale1" class="sale">
+                        <h3>Total sales</h3>
+                        <h1>$20,054</h1>
+                        <div class="progress">
+                            <svg><circle cx="150" cy="85" r="4.3vw" ></circle></svg>
+                        </div>
+                    </div>
+                    <div id="sale2" class="sale">
+                        <h3>Total sales</h3>
+                        <h1>$20,054</h1>
+                        <div class="progress">
+                            <svg><circle cx="150" cy="85" r="4.3vw" ></circle></svg>
+                        </div>
+                    </div>
+                    <div id="sale3" class="sale">
+                        <h3>Total sales</h3>
+                        <h1>$20,054</h1>
+                        <div class="progress">
+                            <svg><circle cx="150" cy="85" r="4.3vw" ></circle></svg>
+                        </div>
+                    </div>
                 </div>
                 <div id="orders-stats">
                     orders
